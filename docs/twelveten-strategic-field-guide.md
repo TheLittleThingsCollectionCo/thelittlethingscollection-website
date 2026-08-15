@@ -955,7 +955,303 @@ This section expands the master idea map into executable operating manuals. Each
 
 > **IMPORTANT** — Completeness does not mean simultaneous activation. Only the priority businesses receive execution time; the remaining playbooks exist so no idea is lost and no future launch begins from zero.
 
-> **Editor's note** — Playbooks are lettered C–N as in the source. Sections A and B (Marellstone & Co. and TwelveTen Wellness / LNC) are not present in the source document; their Part I entries stand as the current record for both. Flagged for a future edition.
+> **Editor's note** — The source document lettered its playbooks C–N, with no A or B for the two Tier 1 engines. Playbooks A and B below were written on 2026-08-15 from the live operating material (the Marellstone Auto Launch Kit and the LNC Controlled Outreach Execution Packet), not from the master architecture. Unlike C–N, their buyer definitions, prices and sequences are specific rather than placeholder. Every price remains a working hypothesis under the pricing rule.
+
+---
+
+### A. Marellstone & Co. — Marellstone Auto
+
+> **STRATEGIC ROLE** — Primary scalable cash engine. First vertical of a parent infrastructure brand intended to house multiple proven verticals.
+
+#### 1. Business definition
+
+Independent automotive-restyling shops lose qualified inquiries in the gaps between Instagram, the website, text and phone — and cannot quote accurately until vehicle details and media have been collected by hand.
+
+| Element | Decision |
+| --- | --- |
+| Buyer | Independent wrap, PPF, tint and ceramic-coating shops, ~1–15 employees, owner-operated or with a small admin team. Appointment-based, visually driven work. |
+| Problem | Inquiries arrive across four disconnected channels; the estimator cannot price until vehicle details and photos are reconstructed from scattered messages. |
+| Revenue | One-time implementation plus ongoing infrastructure management. |
+| Status | Active validation. Domain, parent site, concept, demo, prospect tracker and initial HighLevel workflows live or in progress. |
+| System home | Launch kit + prospect tracker in Drive; HighLevel as the delivery system. |
+
+#### 2. Customer problems and buying triggers
+
+- Qualified leads lost between Instagram, the website, text and phone.
+- Incomplete vehicle information reaching the estimator before pricing.
+- Quotes going quiet with no consistent follow-up.
+- Bay time committed before a deposit is collected.
+- Owner hours spent chasing missing details rather than doing the work.
+
+> **WINNING WEDGE** — "Your team handles the vehicle. Marellstone handles everything that gets it into the bay."
+
+#### 3. Offer ladder and pricing hypotheses
+
+| Level | Offer | Pricing / purpose |
+| --- | --- | --- |
+| Entry | Paid diagnostic / missed-lead audit | Smallest validation offer. |
+| Core | Marellstone Auto Core — one location, validated core journey | $1,500 implementation + $997/month. |
+| Expansion | Marellstone Auto Premier | $2,500–$5,000 implementation + $1,497–$1,997/month. Only after Core is proven. |
+| Scale | Multi-location / enterprise, white-label, niche templates, licensing | Custom. Not a launch-phase conversation. |
+
+> **PRICING RULE** — These are internal test prices, not a permanent rate card, and are not to be displayed publicly during validation. Adjust after the first 3–5 real sales conversations reveal willingness to pay and delivery effort.
+
+#### 4. Minimum viable launch assets
+
+- Parent brand structure approved and the Auto visual direction locked.
+- One reusable ~90-second customer-and-shop demo — the single most important sales asset.
+- Website inquiry form connected to HighLevel with notifications.
+- One complete V1 workflow validated end to end.
+- Prospect tracker with audit fields and priority scoring.
+- Branded mailbox with SPF, DKIM and DMARC; Instagram profile foundation.
+
+#### 5. Step-by-step customer journey
+
+1. Customer asks "how much to wrap my vehicle?" through any verified channel.
+2. Guided service selection, vehicle details, desired finish and timing.
+3. Guided photo and walk-around video collection.
+4. Shop receives one quote-ready record with every required detail in one place.
+5. The estimator enters the human-approved price and sends the quote.
+6. Conservative automated follow-up runs until the quote resolves.
+7. Deposit collected, accepted job moved toward scheduling.
+
+#### 6. Fulfillment workflow
+
+1. Collect the signed agreement and implementation fee.
+2. Send the implementation questionnaire — services, hours, bays, current intake, deposit policy, durations, materials, cancellation policy, escalation rules.
+3. Request least-privilege access to forms, messaging, email, calendar and payments; document who can see customer data.
+4. Confirm brand tone, consent language, opt-out handling and forbidden claims.
+5. Build the service-specific branching intake and quote-ready lead record.
+6. Test with Marellstone-controlled contact details before touching a real customer.
+7. Launch the core workflow first.
+8. Add deposits, scheduling, reminders and extra channels only once core is stable.
+9. Monitor the first 20–30 real interactions closely.
+10. Deliver the first owner report and document the next optimization.
+
+#### 7. AI delegation map
+
+| Workstream | AI prepares | Human owns |
+| --- | --- | --- |
+| Research | Public audit of each shop's visible customer journey; friction observations and opportunity hypotheses. | Approve the audit method; never impersonate a customer or submit a fake quote request. |
+| Sales | Personalized DMs, cold email sequences, follow-ups and objection handling. | Select recipients; approve and send; conduct any live walkthrough. |
+| Production | Workflow maps, intake branching, SOPs, demo scripts and QA checklists. | Configure and test real phone, CRM and scheduling behavior. |
+| Operations | Weekly owner reports, pipeline hygiene, overdue-follow-up flags. | Authorize access, handle exceptions and complaints. |
+| Analytics | Validation scorecard, reply rates, conversion and time-to-first-response. | Decide whether to continue, change or stop. |
+
+#### 8. Marketing and sales system
+
+- Audit-first outreach: open with one specific, respectful, evidence-based observation — never "I sell automation."
+- One primary discovery channel (Instagram) plus personalized email.
+- The reusable demo carries the sale; build it before broad promotional content.
+- Asynchronous path by default, with a live walkthrough available when the buyer wants one.
+
+##### Ethical public audit checklist
+
+1. Review the website quote path and what information it requests.
+2. Review the Instagram bio, contact buttons, highlights and calls to action.
+3. Check whether service-specific intake, media collection, deposits or scheduling are visible.
+4. Review a small sample of recent public reviews for repeated communication concerns.
+5. Record whether the public next step is a form, DM, call, text or booking link.
+6. Write one factual observation and one clearly labeled hypothesis.
+
+#### 9. Operating infrastructure
+
+- Parent brand at marellstone.com; vertical experience at marellstone.com/auto.
+- Branded mailbox with sender authentication; required sender registration before production texting.
+- HighLevel as the delivery platform; prospect tracker as the pipeline source of truth.
+- Least-privilege access register per client.
+
+#### 10. Metrics that decide whether to continue
+
+- Qualified prospects audited; personalized emails and DMs sent.
+- Total replies and reply rate; positive replies.
+- Demo views or walkthroughs requested; proposals sent; customers closed.
+- Sales objections by category.
+- Per client: time to first response, intake completion rate, quote-ready leads, quote-to-deposit conversion, jobs booked, owner time saved where measurable.
+
+#### 11. Launch sequence
+
+##### Days 1–7 — finish the sales surface
+
+1. Finalize the parent structure and approve the Auto visual direction.
+2. Complete and test the reusable demo.
+3. Connect the website inquiry form to HighLevel and notifications.
+4. Validate one complete V1 workflow end to end.
+
+##### Days 8–14 — targeted market entry
+
+1. Start with wrap and PPF shops; keep tint and ceramic in the qualified market.
+2. Build and audit the first 50 prospects.
+3. Send personalized outreach in controlled daily batches.
+4. Engage relevant shops on Instagram without mass-following or generic comments.
+
+##### Days 15–21 — learn and sell
+
+1. Track every response, objection, demo view and walkthrough.
+2. Offer the buyer an asynchronous path or a short live walkthrough.
+3. Send tailored proposals: current state, opportunity, proposed infrastructure, investment, next step.
+4. Close the first founding client without expanding scope to impress them.
+
+##### Days 22–30 — implement and prove
+
+1. Launch the core workflow in stages.
+2. Monitor the first real interactions closely.
+3. Report early operational results.
+4. Request a testimonial only after a real result is visible.
+
+#### 12. Risks, boundaries and stop rules
+
+- **Channel promise rule:** do not promise instant response across a channel until permissions and integrations are tested for that client. Sell only what can be implemented and monitored reliably.
+- Never submit a fake quote request or impersonate a customer to time a response.
+- Do not publish unsupported reply-rate claims; measure Marellstone's own results.
+- Use appropriate consent and opt-out language; complete sender registration before production texting.
+- Never imply automation replaces the shop's pricing judgment.
+- Budget ~60–90 focused minutes daily during validation. Reduce volume before reducing personalization.
+
+#### 13. Current next three actions
+
+1. Send the overdue follow-ups to the three shops already contacted, and stand up the Instagram account and branded mailbox that gate the remaining seven.
+2. Confirm the ~90-second demo is finished, since every positive reply depends on having it to send.
+3. Close one founding client at Core pricing and document baseline, result and testimonial.
+
+---
+
+### B. TwelveTen Wellness — Legal Nurse Consulting and SNF Risk Support
+
+> **STRATEGIC ROLE** — Authority-based cash engine. Highest margin, lowest infrastructure requirement, gated entirely on professional controls.
+
+#### 1. Business definition
+
+Attorneys evaluating LTC/SNF matters need someone who knows where a nursing-home chart hides its own contradictions — before the record set is finalized.
+
+| Element | Decision |
+| --- | --- |
+| Buyer | Plaintiff and defense attorneys handling nursing-home, assisted-living and SNF neglect matters, at intake stage. Florida and New Jersey in the current batch. |
+| Problem | An SNF chart can look complete until you know where to look: wound notes in one module, physician notification in another, an order whose effective date differs from its entry time. |
+| Revenue | Flat-fee pilot converting to larger packages and facility retainers. |
+| Status | Content approved; sending gated on contact routing and professional safeguards. |
+| System home | LNC Executive Hub in Notion; execution packet and outreach sets in Drive. |
+
+#### 2. Customer problems and buying triggers
+
+- A nursing-home file lands at intake and the clinical timeline is difficult to untangle.
+- Wound progression, notifications, orders and care-plan updates sit in different parts of the record.
+- Follow-up records requests are imprecise because no one has named what is missing.
+- The attorney needs a clinical read without committing to an expert engagement.
+
+#### 3. Offer ladder and pricing hypotheses
+
+| Level | Offer | Pricing / purpose |
+| --- | --- | --- |
+| Entry | Intake-stage record screen | **$500 flat**, up to 200 complete readable pages, three business days. |
+| Core | Larger chronology and clinical-issue packages | Primary sellable result once the pilot proves out. |
+| Expansion | PointClickCare/documentation-gap review; incident-file, witness-statement and communication-chain review; demand-letter medical summary within scope | Increase value after proof. |
+| Scale | Facility PRN incident/survey-risk consulting; DON weekly risk briefing, mock survey and corporate trending retainer | Only after the attorney workflow is controlled. |
+
+**Locked pilot terms, identical across all outreach:** flat $500 · up to 200 complete readable pages · three-business-day turnaround after a complete readable record set · concise key-event timeline · one- to two-page clinical findings memo · missing-records list · one round of written follow-up · no required call · non-testifying, attorney-directed. Payment split **$250 retainer + $250 on release**.
+
+> **PRICING RULE** — Blank pages are not counted. Pages requiring handwriting interpretation are outside standard scope and flagged. Additional pages or expanded analysis require a separate written scope.
+
+#### 4. Minimum viable launch assets
+
+- One-page pilot scope — drafted, awaiting founder approval.
+- Fully synthetic sample deliverable — drafted, awaiting founder approval.
+- Professional business email — resolved.
+- Written engagement terms and conflict-screening process — **outstanding**.
+- Secure record-transfer method — **outstanding**.
+- E&O insurance status — **outstanding**.
+
+#### 5. Step-by-step customer journey
+
+1. Attorney receives a personalized, evidence-grounded first contact.
+2. Attorney requests the one-page scope and synthetic sample.
+3. Conflict screening and written engagement terms complete **before** any records move.
+4. $250 retainer; records transferred by the agreed secure method.
+5. Review performed; timeline, findings memo and missing-records list produced.
+6. $250 balance before release of the final work product.
+7. One round of written follow-up questions answered by email.
+
+#### 6. Fulfillment workflow
+
+1. Run the conflict check and accept or decline the engagement.
+2. Execute written engagement terms and collect the retainer.
+3. Receive records only through the approved secure channel — never PHI by ordinary email.
+4. Organize and page-index the record set; exclude blanks, flag handwriting.
+5. Build the neutral key-event timeline with page references.
+6. Draft the findings memo and missing-records list; verify every clinical statement.
+7. Collect the balance, release the work product, answer one round of written follow-up.
+
+#### 7. AI delegation map
+
+| Workstream | AI prepares | Human owns |
+| --- | --- | --- |
+| Research | Attorney and firm prospect research from approved public sources. | Approve every recipient and personalization claim. |
+| Sales | Personalized outreach, follow-ups, proposals, status updates. | Send authorization; route approval per firm. |
+| Production | OCR/organization in an approved secure environment; neutral timeline drafts; missing-record and inconsistency lists. | All clinical interpretation and final findings. |
+| Operations | Intake questionnaires, conflict-check drafts, records-request checklists. | Conflict decisions, secure-data handling, access. |
+| Analytics | Reply and conversion tracking; time and margin per engagement. | Decide whether to continue, change or stop. |
+
+#### 8. Marketing and sales system
+
+- Private, direct outreach only. Personalized email where a verified route exists; private LinkedIn networking otherwise.
+- **No public positioning.** No public LinkedIn profile changes, no public pilot announcement, no public negligence or error framing, no public founder identification.
+- Written-only sales motion; no introductory call required at any stage.
+- Proof carried by the one-page scope and the synthetic sample, not by claims.
+
+#### 9. Operating infrastructure
+
+- Professional signature address; no phone in the signature, no call invitations.
+- Secure record-transfer tool — to be selected before any records are accepted.
+- Conflict-check log, engagement-terms template, E&O coverage.
+- Prospect tracker reconciled against Notion to prevent duplicate outreach.
+
+#### 10. Metrics that decide whether to continue
+
+- Verified contact routes obtained per firm.
+- Messages sent, replies, scope/sample requests.
+- Engagements accepted; pilots delivered on the three-day standard.
+- Realized hourly rate against the $500 flat fee.
+- Conversion from pilot to a larger package.
+
+#### 11. Launch sequence
+
+##### Immediate — clear the routing wall
+
+1. Send to the one firm with a published address.
+2. Call the remaining firms' main lines to obtain a non-intake email for vendor correspondence.
+3. Confirm or discard the two directory-sourced addresses.
+4. Decide the contact method per firm; form submissions remain prohibited.
+
+##### Before any records arrive
+
+1. Approve the one-page scope, including the $250/$250 split.
+2. Approve the synthetic sample.
+3. Select and test the secure transfer method.
+4. Resolve E&O status and finalize engagement terms and the conflict-check process.
+
+##### After the first pilot
+
+1. Deliver page-cited, neutral findings on the three-day standard.
+2. Request structured feedback.
+3. Convert repeated needs into higher-value packages.
+4. Approach facilities only once the attorney workflow is controlled.
+
+#### 12. Risks, boundaries and stop rules
+
+- Non-testifying and attorney-directed at all times; all legal judgments stay with the attorney.
+- The service does **not** determine standard of care, causation, negligence, liability, regulatory violations or reportability.
+- Observations limited to what the record documents.
+- No PHI through ordinary email, Slack, Notion or Monday; no PHI in consumer AI systems without approved safeguards.
+- No fabricated citations or unverified record extraction.
+- Do not market as detecting malpractice or guaranteeing case value.
+- Conflict screening and written terms complete **before** records are received — not after.
+- Personalization and sources rechecked immediately before every send.
+
+#### 13. Current next three actions
+
+1. Resolve the contact route for every firm without a verified email; send to the one firm that already has one.
+2. Approve the scope sheet and synthetic sample so a positive reply can be answered same-day.
+3. Close E&O, secure transfer and engagement terms before accepting a single page.
 
 ---
 

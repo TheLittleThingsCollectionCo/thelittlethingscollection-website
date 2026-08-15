@@ -20,4 +20,8 @@ This repository contains:
 - (Coming Soon) Milestone Collection
 - (Coming Soon) Motherhood Collection
 
+## Documentation
+
+- [TwelveTen Strategic Field Guide — Danielle's Master Idea-to-Income Book](docs/twelveten-strategic-field-guide.md)
+
 Built with ❤️ by The Little Things Collection.

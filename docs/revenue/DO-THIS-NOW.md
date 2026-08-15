@@ -8,13 +8,16 @@
 
 ## Ranked by how fast it becomes money
 
+> **If the goal is $1,000 this week, start with the $297 Lead Leak Audit** — see `lead-leak-audit.md` for the offer and `audit-outreach.md` for all ten messages. Four sales is $1,188, and it's the only offer here small enough to close in seven days. Everything below still stands; the audit just moves to the front.
+
 | # | Action | Blocker | Time | Value |
 | --- | --- | --- | --- | --- |
-| 1 | Send 3 overdue Marellstone follow-ups | None — text is written | 10 min | $1,500 + $997/mo |
-| 2 | Resolve LNC contact routes (7 firms) | One decision + 7 phone calls | 45 min | $500 × 10 |
-| 3 | Create `@marellstone` IG + `hello@` mailbox | None — just not done | 30 min | Unblocks 7 prospects |
-| 4 | List 7 finished PDFs on Etsy | None | 2 hrs | Trickle, but free |
-| 5 | Clear LNC hard stops (E&O, transfer, terms) | Founder decisions | — | Gates all LNC delivery |
+| 1 | Send 3 overdue follow-ups **as audit offers** | None — text is written | 10 min | $297 each, then $1,500 |
+| 2 | Send 7 cold audit offers | IG handles + accounts | 30 min | $297 each |
+| 3 | Resolve LNC contact routes (7 firms) | One decision + 7 phone calls | 45 min | $500 × 10 |
+| 4 | Create `@marellstone` IG + `hello@` mailbox | None — just not done | 30 min | Unblocks 7 prospects |
+| 5 | List 7 finished PDFs on Etsy | None | 2 hrs | Trickle, but free |
+| 6 | Clear LNC hard stops (E&O, transfer, terms) | Founder decisions | — | Gates all LNC delivery |
 
 ---
 

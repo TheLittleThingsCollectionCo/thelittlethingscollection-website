@@ -23,5 +23,7 @@ This repository contains:
 ## Documentation
 
 - [TwelveTen Strategic Field Guide — Danielle's Master Idea-to-Income Book](docs/twelveten-strategic-field-guide.md)
+- [Do This Now — current revenue priorities](docs/revenue/DO-THIS-NOW.md)
+- [ADRD audit toolkit](docs/adrd/) · [TwelveTen Compliance website](site/)
 
 Built with ❤️ by The Little Things Collection.

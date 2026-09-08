@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADRD File Self-Check: Estimate Your Exposure in 2 Minutes | TwelveTen</title>
+<meta name="description" content="Free 2-minute self-check for Florida home care providers: estimate how many required ADRD training records under §430.5025 you may not be able to produce for a surveyor. Nothing you enter leaves your browser.">
+<link rel="canonical" href="https://www.twelveten.example/selfcheck.html">
+<meta property="og:title" content="ADRD File Self-Check — 2 minutes, no files needed">
+<meta property="og:description" content="How many §430.5025 records could you produce right now? Answer six questions and find out. Free, private, nothing stored.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#F4F6F5; --surface:#FFFFFF; --surface-2:#EDF1EF; --inset:#F8FAF9;
+  --ink:#131A19; --ink-2:#3B4947; --muted:#61706D;
+  --rule:#D6DEDB; --rule-2:#B6C3BF;
+  --accent:#0E6B5C; --accent-soft:#E2F0EC;
+  --warn:#B4741A; --warn-soft:#F8EEDC;
+  --crit:#9B2C39; --crit-soft:#F9E7E9;
+  --bar:#00907C; --bar-track:#E4EBE9;
+  --shadow:0 1px 2px rgba(19,26,25,.05), 0 10px 30px -16px rgba(19,26,25,.18);
+  --f-display:"Newsreader", ui-serif, Georgia, serif;
+  --f-body:"Public Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--f-body);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 clamp(1rem,4vw,1.75rem) 5rem}
+
+header{padding:3.5rem 0 1.75rem}
+.brandline{font-family:var(--f-mono);font-size:.67rem;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 1.15rem}
+h1{font-family:var(--f-body);font-weight:700;font-size:clamp(1.9rem,5.5vw,2.7rem);line-height:1.08;
+  letter-spacing:-.022em;margin:0;text-wrap:balance;max-width:20ch}
+.dek{font-size:1.03rem;color:var(--ink-2);margin:1rem 0 0;max-width:60ch}
+.privacy{display:inline-flex;align-items:center;gap:.5em;margin-top:1.35rem;padding:.4rem .7rem;
+  background:var(--accent-soft);border:1px solid var(--accent);border-radius:3px;
+  font-family:var(--f-mono);font-size:.7rem;letter-spacing:.03em;color:var(--accent)}
+
+.stage{background:var(--surface);border:1px solid var(--rule);border-radius:5px;
+  box-shadow:var(--shadow);margin-top:2rem;overflow:hidden}
+.stage-head{padding:1.15rem clamp(1rem,3vw,1.5rem);background:var(--surface-2);
+  border-bottom:1px solid var(--rule)}
+.stage-head h2{font-size:.94rem;font-weight:700;margin:0;letter-spacing:-.005em}
+.stage-head p{margin:.3rem 0 0;font-size:.85rem;color:var(--muted)}
+.stage-body{padding:clamp(1rem,3vw,1.5rem);display:grid;gap:1.4rem}
+
+.q{display:grid;gap:.5rem}
+.q > label, .q .qlab{font-size:.92rem;font-weight:600;line-height:1.4}
+.q .hint{font-size:.82rem;color:var(--muted);line-height:1.45}
+.numrow{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap}
+input[type=number]{font-family:var(--f-mono);font-size:1rem;font-variant-numeric:tabular-nums;
+  width:7.5rem;padding:.5rem .65rem;border:1px solid var(--rule-2);border-radius:3px;
+  background:var(--inset);color:var(--ink);-moz-appearance:textfield}
+input[type=number]:focus-visible{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.unit{font-size:.85rem;color:var(--muted)}
+select{font-family:var(--f-body);font-size:.95rem;padding:.5rem .65rem;border:1px solid var(--rule-2);
+  border-radius:3px;background:var(--inset);color:var(--ink);max-width:100%}
+select:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+.seg{display:grid;grid-template-columns:repeat(auto-fit,minmax(6.6rem,1fr));gap:0;
+  border:1px solid var(--rule-2);border-radius:3px;overflow:hidden}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{padding:.55rem .4rem;text-align:center;font-size:.83rem;cursor:pointer;
+  background:var(--inset);border-right:1px solid var(--rule-2);color:var(--ink-2);
+  transition:background .12s ease,color .12s ease;line-height:1.3}
+.seg label:last-of-type{border-right:0}
+.seg input:checked + label{background:var(--accent);color:#fff;font-weight:600}
+.seg input:focus-visible + label{outline:2px solid var(--accent);outline-offset:-3px}
+@media (prefers-reduced-motion: reduce){.seg label{transition:none}}
+
+.flag{font-size:.82rem;color:var(--crit);font-family:var(--f-mono);margin-top:.1rem;min-height:1.1em}
+
+/* ---- results ---- */
+#out{margin-top:2rem;transition:opacity .2s ease}
+#out[data-ready="false"]{opacity:.42;pointer-events:none;filter:saturate(.25)}
+.headline{background:var(--surface);border:1px solid var(--rule);border-radius:5px;
+  box-shadow:var(--shadow);padding:clamp(1.2rem,4vw,2rem);text-align:center}
+.headline .lab{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);margin:0}
+.bignum{font-family:var(--f-display);font-weight:500;font-size:clamp(3.6rem,15vw,6rem);line-height:1;
+  letter-spacing:-.03em;color:var(--warn);margin:.5rem 0 .1rem;font-variant-numeric:tabular-nums}
+.headline .sub{font-size:.95rem;color:var(--ink-2);margin:.4rem auto 0;max-width:44ch}
+.pastdue{margin-top:1.2rem;padding-top:1.1rem;border-top:1px solid var(--rule);
+  display:flex;justify-content:center;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.pastdue b{font-family:var(--f-mono);font-size:1.5rem;color:var(--crit);font-variant-numeric:tabular-nums}
+.pastdue span{font-size:.9rem;color:var(--ink-2)}
+
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:5px;
+  box-shadow:var(--shadow);margin-top:1.1rem;overflow:hidden}
+.panel-head{padding:1rem clamp(1rem,3vw,1.4rem) .8rem}
+.panel-head h3{font-size:.94rem;font-weight:700;margin:0}
+.panel-head p{margin:.28rem 0 0;font-size:.84rem;color:var(--muted);max-width:60ch}
+.rows{padding:.2rem clamp(1rem,3vw,1.4rem) 1.3rem;display:grid;gap:1rem}
+.row{display:grid;gap:.4rem}
+.rowtop{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.rowtop .name{font-size:.9rem;font-weight:600}
+.rowtop .name em{display:block;font-style:normal;font-weight:400;font-size:.78rem;color:var(--muted);
+  font-family:var(--f-mono);letter-spacing:.02em;margin-top:.1rem}
+.rowtop .val{font-family:var(--f-mono);font-size:.9rem;font-variant-numeric:tabular-nums;
+  white-space:nowrap;color:var(--ink)}
+.rowtop .val b{font-size:1.05rem;color:var(--warn)}
+.track{height:9px;background:var(--bar-track);border-radius:2px;overflow:hidden}
+.fill{height:100%;background:var(--bar);border-radius:0 2px 2px 0;transition:width .25s ease}
+@media (prefers-reduced-motion: reduce){.fill{transition:none}}
+
+.cz{background:var(--crit-soft);border:1px solid var(--crit);border-radius:5px;
+  padding:1.1rem clamp(1rem,3vw,1.4rem);margin-top:1.1rem}
+.cz h3{margin:0 0 .5rem;font-size:.92rem;font-weight:700;color:var(--crit)}
+.cz p{margin:0;font-size:.89rem;color:var(--ink-2);max-width:62ch}
+.cz ol{margin:.7rem 0 0;padding-left:1.2rem;font-size:.89rem}
+.cz li{margin:.25rem 0}
+.cz .tag{font-family:var(--f-mono);font-size:.78rem;background:var(--surface);
+  padding:.1em .4em;border-radius:2px;border:1px solid var(--crit)}
+
+.unclear{background:var(--warn-soft);border:1px solid var(--warn);border-radius:5px;
+  padding:1rem clamp(1rem,3vw,1.4rem);margin-top:1.1rem}
+.unclear h3{margin:0 0 .4rem;font-size:.9rem;font-weight:700;color:var(--warn)}
+.unclear p{margin:0;font-size:.88rem;color:var(--ink-2);max-width:62ch}
+
+.limits{background:var(--surface-2);border:1px solid var(--rule);border-radius:5px;
+  padding:1.1rem clamp(1rem,3vw,1.4rem);margin-top:1.1rem}
+.limits h3{margin:0 0 .6rem;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--muted)}
+.limits ul{margin:0;padding-left:1.15rem;font-size:.86rem;color:var(--ink-2)}
+.limits li{margin:.3rem 0;max-width:64ch}
+
+.cta{background:var(--surface);border:1px solid var(--accent);border-radius:5px;
+  box-shadow:var(--shadow);padding:clamp(1.2rem,4vw,1.8rem);margin-top:1.75rem}
+.cta h3{margin:0 0 .5rem;font-size:1.1rem;font-weight:700}
+.cta p{margin:0;font-size:.93rem;color:var(--ink-2);max-width:58ch}
+.cta .btnrow{margin-top:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;
+  font-size:.94rem;padding:.7rem 1.3rem;border-radius:3px;border:1px solid var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.btn.ghost{background:transparent;color:var(--accent)}
+.fineprint{font-size:.8rem;color:var(--muted);margin-top:.9rem}
+
+footer{margin-top:2.5rem;padding-top:1.3rem;border-top:1px solid var(--rule);
+  font-size:.8rem;color:var(--muted);max-width:66ch}
+footer p{margin:.4rem 0}
+code{font-family:var(--f-mono);font-size:.86em;background:var(--surface-2);padding:.1em .35em;border-radius:2px}
+
+nav{border-bottom:1px solid var(--rule);background:var(--surface)}
+nav .navwrap{max-width:760px;margin:0 auto;padding:.9rem clamp(1rem,4vw,1.75rem);display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.02rem;color:var(--ink);text-decoration:none}
+.logo span{color:var(--accent)}
+nav .links a{text-decoration:none;color:var(--ink-2);font-weight:600;font-size:.9rem}
+nav .links a:hover{color:var(--accent)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="navwrap">
+    <a class="logo" href="/">Twelve<span>Ten</span> Compliance</a>
+    <div class="links"><a href="/florida-adrd-training-requirements.html">Requirements guide →</a></div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header>
+  <p class="brandline">TwelveTen Compliance Education</p>
+  <h1>How many ADRD records could you produce right now?</h1>
+  <p class="dek">Six questions, about two minutes. No files needed — answer from what you know. You’ll get an
+    estimate of how many required records you may not be able to put in front of a surveyor today.</p>
+  <p class="privacy">Nothing you enter leaves your browser</p>
+</header>
+
+
+<section class="stage">
+  <div class="stage-head">
+    <h2>Your workforce</h2>
+    <p>Round numbers are fine. Include contracted and referred workers, not just employees.</p>
+  </div>
+  <div class="stage-body">
+    <div class="q">
+      <label for="ptype">What type of provider are you?</label>
+      <select id="ptype">
+        <option value="inhome">Home health agency, nurse registry, or homemaker/companion</option>
+        <option value="facility">Nursing home, ALF, adult family-care home, or adult day care</option>
+        <option value="spec">ALF, AFCH, or ADC advertising specialized dementia care</option>
+      </select>
+    </div>
+
+    <div class="q">
+      <label for="total">How many active workers are on your roster?</label>
+      <p class="hint">Everyone employed, contracted, or referred by you.</p>
+      <div class="numrow">
+        <input type="number" id="total" min="0" max="9999" step="1" inputmode="numeric" placeholder="0">
+        <span class="unit">workers</span>
+      </div>
+    </div>
+
+    <div class="q">
+      <label for="pcare">Of those, how many provide personal care?</label>
+      <p class="hint">Hands-on assistance with daily living, medication self-administration, homemaker or
+        companion services, or nursing services. Not administrative, maintenance, housekeeping, laundry, or
+        food preparation.</p>
+      <div class="numrow">
+        <input type="number" id="pcare" min="0" max="9999" step="1" inputmode="numeric" placeholder="0">
+        <span class="unit">workers</span>
+      </div>
+      <p class="flag" id="flag-pcare"></p>
+    </div>
+
+    <div class="q">
+      <label for="rcontact">How many others have regular in-person contact, but don't provide personal care?</label>
+      <p class="hint">Duties that put them face to face with residents or participants on a daily basis.</p>
+      <div class="numrow">
+        <input type="number" id="rcontact" min="0" max="9999" step="1" inputmode="numeric" placeholder="0">
+        <span class="unit">workers</span>
+      </div>
+      <p class="flag" id="flag-rc"></p>
+    </div>
+
+    <div class="q">
+      <label for="legacy">How many were employed or referred before 1 July 2023?</label>
+      <p class="hint">Their training was due by 1 July 2026 under the transition provision. That date has passed.</p>
+      <div class="numrow">
+        <input type="number" id="legacy" min="0" max="9999" step="1" inputmode="numeric" placeholder="0">
+        <span class="unit">workers</span>
+      </div>
+      <p class="flag" id="flag-legacy"></p>
+    </div>
+  </div>
+</section>
+
+<section class="stage">
+  <div class="stage-head">
+    <h2>What you could produce in ten minutes</h2>
+    <p>Be honest rather than optimistic — an optimistic answer here just moves the surprise to survey day.</p>
+  </div>
+  <div class="stage-body">
+
+    <div class="q">
+      <p class="qlab" id="lab-written">Written ADRD information given at hire, evidenced in the file</p>
+      <div class="seg" role="group" aria-labelledby="lab-written">
+        <input type="radio" name="w" id="w0" value="0.02"><label for="w0">All of them</label>
+        <input type="radio" name="w" id="w1" value="0.20"><label for="w1">Most</label>
+        <input type="radio" name="w" id="w2" value="0.55"><label for="w2">Some</label>
+        <input type="radio" name="w" id="w3" value="0.80" checked><label for="w3">Not sure</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <p class="qlab" id="lab-doea">The 1-hour Department of Elder Affairs completion record</p>
+      <div class="seg" role="group" aria-labelledby="lab-doea">
+        <input type="radio" name="d" id="d0" value="0.02"><label for="d0">All of them</label>
+        <input type="radio" name="d" id="d1" value="0.20"><label for="d1">Most</label>
+        <input type="radio" name="d" id="d2" value="0.55"><label for="d2">Some</label>
+        <input type="radio" name="d" id="d3" value="0.80" checked><label for="d3">Not sure</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <p class="qlab" id="lab-addl">The additional training record — <span id="addl-name">2 hours</span></p>
+      <div class="seg" role="group" aria-labelledby="lab-addl">
+        <input type="radio" name="a" id="a0" value="0.02"><label for="a0">All of them</label>
+        <input type="radio" name="a" id="a1" value="0.20"><label for="a1">Most</label>
+        <input type="radio" name="a" id="a2" value="0.55"><label for="a2">Some</label>
+        <input type="radio" name="a" id="a3" value="0.80" checked><label for="a3">Not sure</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <p class="qlab" id="lab-unclear">Workers whose role classification you'd have to think about before answering</p>
+      <p class="hint">Personal care, regular contact, or neither — cases that are genuinely arguable.</p>
+      <div class="seg" role="group" aria-labelledby="lab-unclear">
+        <input type="radio" name="u" id="u0" value="0" checked><label for="u0">None</label>
+        <input type="radio" name="u" id="u1" value="0.08"><label for="u1">A few</label>
+        <input type="radio" name="u" id="u2" value="0.25"><label for="u2">Quite a few</label>
+        <input type="radio" name="u" id="u3" value="0.40"><label for="u3">Not sure</label>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="out" data-ready="false">
+
+  <div class="headline">
+    <p class="lab">Estimated records you may not be able to produce</p>
+    <p class="bignum" id="big">—</p>
+    <p class="sub" id="bigsub">Fill in your roster numbers above to see an estimate.</p>
+    <div class="pastdue" id="pdwrap" hidden>
+      <b id="pd">—</b><span>of those are estimated to be already past a statutory deadline</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">
+      <h3>Where the exposure sits</h3>
+      <p>Estimated records missing, by requirement, against the population each one actually reaches.</p>
+    </div>
+    <div class="rows" id="rows"></div>
+  </div>
+
+  <div class="cz">
+    <h3>These are the three records AHCA cited a nurse registry for</h3>
+    <p>Florida's Agency for Health Care Administration has issued a citation under core tag
+      <span class="tag">CZ875</span> for ADRD non-compliance. The three documented failures were:</p>
+    <ol>
+      <li>No written ADRD information provided at the time of hire</li>
+      <li>No proof of the 1-hour training completed within 30 days</li>
+      <li>No proof of the 2-hour training completed within 7 months for personal care staff</li>
+    </ol>
+    <p style="margin-top:.7rem">You just answered for all three.</p>
+  </div>
+
+  <div class="unclear" id="unclearbox" hidden>
+    <h3>Roughly <span id="uct">0</span> workers can't be assessed until you classify them</h3>
+    <p>Until personal care versus regular contact is settled for these workers, neither the applicable
+      requirements nor their deadlines can be determined. That decision belongs to the administrator — it
+      isn't something a training vendor can make for you, and guessing it is how the wrong training gets
+      assigned to the wrong people.</p>
+  </div>
+
+  <div class="limits">
+    <h3>What this is not</h3>
+    <ul>
+      <li>This is an estimate built from what you typed, not a review of your files. It is not a finding.</li>
+      <li>It is not legal advice, and it is not a prediction of what a surveyor would conclude.</li>
+      <li>It cannot tell you whether a record you do hold is actually adequate — only a file review does that.</li>
+      <li>Nothing here represents that any course or provider is state-approved.</li>
+      <li>If your files are already clean, this will overstate your exposure. That is the honest limit of a
+        self-report.</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="cta">
+  <h3>Find out what the real number is</h3>
+  <p>A fixed-fee personnel-file audit reconciles your roster against the statute, tells you exactly which
+    records are missing or incomplete, and hands you a remediation list with owners and dates. It does not
+    require changing your current training vendor.</p>
+  <p style="margin-top:.7rem"><strong>$495</strong> for up to 25 workers · <strong>$895</strong> for 26–75 ·
+    <strong>$1,495</strong> for 76–150, with a re-audit included.</p>
+  <div class="btnrow">
+    <a class="btn" href="mailto:twelvetenwellness@gmail.com?subject=scope">Email me the scope</a>
+    <a class="btn ghost" href="mailto:twelvetenwellness@gmail.com?subject=ADRD%20question">Ask a question first</a>
+  </div>
+  <p class="fineprint">No sales call required. Reply “scope” and you'll get the fixed-fee checklist and secure
+    intake instructions.</p>
+</div>
+
+<footer>
+  <p><strong>TwelveTen Compliance Education</strong> · Danielle Hammerstone, RN, BSN</p>
+  <p>[MAILING ADDRESS — required before this page is used in any email campaign]</p>
+  <p><a href="/">TwelveTen home</a> · <a href="/florida-adrd-training-requirements.html">Full requirements guide</a></p>
+  <p>Requirements referenced are those at Florida Statutes §430.5025. Timing statements should be checked
+    against the current law. This page performs no file review, stores nothing, and sends nothing.</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var num = function(id){ var v = parseInt($(id).value, 10); return (isNaN(v) || v < 0) ? 0 : v; };
+  var picked = function(name){
+    var el = document.querySelector('input[name="' + name + '"]:checked');
+    return el ? parseFloat(el.value) : 0.8;
+  };
+
+  var ADDL = { inhome:'2 hours', facility:'3 hours', spec:'3 hours, due at 3 months' };
+
+  function render(){
+    var type = $('ptype').value;
+    $('addl-name').textContent = ADDL[type];
+
+    var total = num('total'), pcare = num('pcare'), rc = num('rcontact'), legacy = num('legacy');
+
+    // gentle consistency notes — never block, just tell them
+    $('flag-pcare').textContent  = (pcare > total && total > 0) ? 'More than your roster total.' : '';
+    $('flag-rc').textContent     = ((pcare + rc) > total && total > 0) ? 'Personal care plus regular contact is more than your roster total.' : '';
+    $('flag-legacy').textContent = (legacy > total && total > 0) ? 'More than your roster total.' : '';
+
+    var ready = total > 0;
+    $('out').setAttribute('data-ready', ready ? 'true' : 'false');
+
+    var fw = picked('w'), fd = picked('d'), fa = picked('a'), fu = picked('u');
+
+    // population each requirement actually reaches
+    var popW = total;              // written info: every employee
+    var popD = pcare + rc;         // 1-hour DOEA: personal care OR regular contact
+    var popA = (type === 'spec') ? (pcare + rc) : pcare;  // (e)1 widens to regular contact
+
+    var eW = Math.round(popW * fw), eD = Math.round(popD * fd), eA = Math.round(popA * fa);
+    var totalGap = eW + eD + eA;
+
+    if(!ready){
+      $('big').textContent = '—';
+      $('bigsub').textContent = 'Fill in your roster numbers above to see an estimate.';
+      $('pdwrap').hidden = true;
+      $('rows').innerHTML = '';
+      $('unclearbox').hidden = true;
+      return;
+    }
+
+    $('big').textContent = totalGap.toLocaleString();
+    $('bigsub').textContent = totalGap === 0
+      ? 'Based on what you entered, you may be able to produce everything. A file review is what confirms it.'
+      : 'individual records, across ' + total.toLocaleString() + ' worker' + (total === 1 ? '' : 's') +
+        '. Each one is a document a surveyor can ask for by name.';
+
+    // transition cohort: their deadline was 1 Jul 2026, so any gap among them is already past due
+    var pastDue = (total > 0) ? Math.round(totalGap * Math.min(legacy, total) / total) : 0;
+    $('pdwrap').hidden = !(legacy > 0 && pastDue > 0);
+    $('pd').textContent = pastDue.toLocaleString();
+
+    var rows = [
+      { name:'Basic written information', cite:'§4(a) · due at hire',        est:eW, pop:popW },
+      { name:'1-hour DOEA training',      cite:'§4(b) · due within 30 days', est:eD, pop:popD },
+      { name:'Additional ' + ADDL[type],  cite:(type === 'spec' ? '§4(e)1' : '§4(c)/(d)') +
+            ' · due within ' + (type === 'spec' ? '3 months' : '7 months'), est:eA, pop:popA }
+    ];
+    var worst = Math.max(1, eW, eD, eA);
+    $('rows').innerHTML = rows.map(function(r){
+      var pct = Math.round((r.est / worst) * 100);
+      return '<div class="row"><div class="rowtop">' +
+        '<span class="name">' + r.name + '<em>' + r.cite + '</em></span>' +
+        '<span class="val"><b>' + r.est.toLocaleString() + '</b> of ' + r.pop.toLocaleString() + '</span>' +
+        '</div><div class="track"><div class="fill" style="width:' + pct + '%"></div></div></div>';
+    }).join('');
+
+    var unclear = Math.round(total * fu);
+    $('unclearbox').hidden = !(unclear > 0);
+    $('uct').textContent = unclear.toLocaleString();
+  }
+
+  ['ptype','total','pcare','rcontact','legacy'].forEach(function(id){
+    $(id).addEventListener('input', render);
+    $(id).addEventListener('change', render);
+  });
+  document.querySelectorAll('.seg input').forEach(function(el){
+    el.addEventListener('change', render);
+  });
+  render();
+})();
+</script>
+</body>
+</html>

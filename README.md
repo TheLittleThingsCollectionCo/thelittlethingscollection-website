@@ -23,5 +23,6 @@ This repository contains:
 ## Documentation
 
 - [TwelveTen Strategic Field Guide — Danielle's Master Idea-to-Income Book](docs/twelveten-strategic-field-guide.md)
+- [Business Autopilot — Idea Inbox Audit (2026-09-08)](docs/business-autopilot/idea-inbox-audit-2026-09-08.md)
 
 Built with ❤️ by The Little Things Collection.

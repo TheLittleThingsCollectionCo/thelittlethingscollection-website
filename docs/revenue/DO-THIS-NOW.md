@@ -6,21 +6,35 @@
 
 ---
 
+## FOUNDER DECISION — 2026-09-08 (canonical, supersedes all other priority lists in this repo)
+
+Declared by Danielle after reviewing this document and the Business Autopilot inbox audit:
+
+1. **Holiday Elf kit** — already in production and about to list on Etsy. Owned by the founder directly; not tracked here. Elf *expansion* (Memory Volume, Family Traditions, holiday bundles) waits for real conversion data from the listing — no building on top of it yet.
+2. **The ADRD compliance audit (TwelveTen Compliance) is the primary revenue engine.** Rationale in the founder's words: the nurse work is more money per sale. The ranked list below is its critical path.
+3. **LNC** rides behind the shared attorney/E&O errand (#1 below) and the routing calls; it is the secondary engine, not a parallel primary.
+4. **Marellstone is paused** unless the founder explicitly reactivates it.
+5. **Seed freeze**: no new ideas get build time until the first ADRD audit is sold.
+
+Any Claude session working in this repo: treat this block as the tiebreaker. Do not write a competing priority list; propose changes to this one.
+
+---
+
 ## Ranked by leverage
 
 | # | Action | Blocker | Time | What it unlocks |
 | --- | --- | --- | --- | --- |
 | 1 | **One attorney meeting + one E&O insurance quote** | Founder scheduling | 2 calls | Delivery for **two ventures at once** — the same items (engagement terms, E&O, secure transfer) gate LNC delivery and ADRD go-live |
 | 2 | Send the **Leesfield email** | None — published address, approved text, unsent since **07-22** | 5 min | First LNC outreach actually in market |
-| 3 | **List the 7 finished PDFs on Etsy** | None | 2 hrs | Passive trickle; zero risk |
+| 3 | **List the 7 finished PDFs on Etsy** | None — after the Elf listing is live | 2 hrs | Passive trickle; zero risk |
 | 4 | **ADRD go-live**: buy domain, deploy `site/` (see `site/DEPLOY.md`), add mailing address, GA4 + Search Console | Domain purchase | ~1 hr | The self-check funnel, SEO, and a legal email footer |
 | 5 | **ADRD outreach**: post the group/LinkedIn content, pull the AHCA licensure + HCAF lists, start the email sequence | #4 first (footer needs the address) | ongoing | First paid audit pipeline |
 | 6 | **LNC contact routing**: 7 receptionist calls (numbers + script in the 08-15 version, git history) | None | 45 min | 9 of 10 approved LNC emails get a send route |
-| 7 | **Marellstone: decide — activate or pause** | Founder decision | — | The IG account + mailbox have been "not started" since July. The field guide's own day-61–90 rule says archive or pause what didn't earn evidence. Deciding beats drifting. |
+| 7 | ~~Marellstone: decide — activate or pause~~ | **Decided 09-08: paused** | — | Reactivation is a founder call, not a drift back. |
 
 ## The quarter's one strategic decision
 
-The field guide (days 61–90) requires choosing next quarter's primary engine from sales data. There is no sales data — sends were blocked all quarter — so decide on blockers and tailwind: **ADRD** has a live enforcement tailwind and the most complete toolkit; **LNC** needs seven phone calls; **Marellstone** has shown three weeks of non-action. Whatever is chosen, the others get an explicit pause, not a slow fade.
+**Made — see the Founder Decision block above.** ADRD is the primary engine; LNC secondary; Marellstone paused; Elf ships and waits for conversions before expansion.
 
 ## Where things live
 

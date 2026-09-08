@@ -1,6 +1,6 @@
 # Business Autopilot — Idea Inbox Audit
 
-**Audited 2026-09-08 against the full Idea Inbox export (71 rows, Revenue Score total 4,146).** Cross-checked against `docs/revenue/DO-THIS-NOW.md` (built 2026-08-15) and the Strategic Field Guide.
+**Audited 2026-09-08 against the full Idea Inbox export (71 rows, Revenue Score total 4,146). Reclassifications in §4 were founder-approved and applied to the Monday board the same day (24 rows updated, legacy column deleted).** Cross-checked against `docs/revenue/DO-THIS-NOW.md` (built 2026-08-15) and the Strategic Field Guide.
 
 > **Verdict:** The inbox is doing its job as a filter (24 rows are PARK / KILL / DUPLICATE, correctly) but it has stopped being a decision system. Since 2026-08-17 it has added 9 new seeds and recorded **zero sales, zero paid clients, and zero listings going live**. Every "within 7 / 14 / 72 hours" milestone written on 08-17 is now three weeks stale. The board and `DO-THIS-NOW.md` name different first moves. The fix is not more scoring. It is one canonical priority, a freeze on new seeds, and one time-boxed publish.
 
@@ -78,7 +78,7 @@ Gmail AI Inbox, AI Course DFY, AI SOP Sprint, DFY Digital Product Setup, Law-fir
 
 ### 2.5 High-value items are hidden inside low-value rows
 
-- **Baby Shower Games bundle** (the board's own "first sale within 72 hours" pick) lives inside "Consumer physical-product portfolio — PARK". It needs its own Product Factory record or it will never be worked.
+- **Baby Shower Games bundle** (the board's own "first sale within 72 hours" pick) lives inside "Consumer physical-product portfolio — PARK". A Product Factory record does exist (item 12825708194), but the inbox row never pointed to it.
 - **RIA / Redtail agent** (TEST FIRST, 85, the joint-highest score on the board) is a child of "Vertical AI CRM — PARK". The parent and child contradict each other, and the child's 10–12 week build plus discovery calls is the opposite of speed-to-cash.
 - **Halloween POD** milestone reads "must be live by September 5". Today is September 8. The row still says QUEUE with a re-audit. The seasonal window for POD shirts is effectively closed for 2026; the SVG/PNG digital-pack salvage path is the only version still worth doing this year.
 
@@ -115,7 +115,7 @@ Apply these directly in the AI Decision column. Scores are left alone except whe
 | TLC Memory Volume | BUILD NOW — WAVE #3 | QUEUE behind Elf first-sale evidence | Companion to an unlaunched kit |
 | Family Traditions Revival | PROCESSED, 88 | Keep routing; cap effective priority below every finished asset | Score inflation vs. built inventory |
 | Creator Deal OS | TEST FIRST / QUEUED, 85 | QUEUE | Requires founder Loom + TikToks; no finished asset |
-| Consumer physical portfolio | PARK | PARK, **and spawn Baby Shower Games as its own Product Factory item** | Hidden CASH NOW product |
+| Consumer physical portfolio | PARK | PARK, with a pointer to the existing Product Factory record for Baby Shower Games (item 12825708194, already created 08-17) | Hidden CASH NOW product; no new item needed |
 | Halloween POD library | QUEUE | SALVAGE ONLY 2026: SVG/PNG packs; POD shirts re-queue for 2027 | Sept 5 window missed |
 | Vertical AI CRM (parent) + RIA child | PARK / TEST FIRST 85 | Both PARK; RIA score to ≤60 | Parent/child contradiction; 10–12 wk build, calls required |
 | Law-firm agent | TEST FIRST | PARK | 10 cold conversations required |

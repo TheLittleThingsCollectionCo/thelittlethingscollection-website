@@ -26,3 +26,15 @@ Then regenerate all nine listing images from the real pages and re-QA.
 
 ## Adult / parents party edition
 Captured as Idea Inbox item 13001181395, QUEUED behind the family kit. Not a Cards Against Humanity clone: original name, original card design, PG-13 base with optional expansion, and a separate shop placement because of brand fit and Etsy mature-content rules. A milder "Parents' After-Hours" bonus deck inside the family kit is the brand-safe way to test the idea first.
+
+## Update 2026-09-09 — v3.8 restyle delivered
+Founder rejected the heirloom/parchment samples ("not eye-catching, reads like a form") and asked for the fun, trendy look that sells in the category, plus a parent deck.
+
+Built and attached to Product Factory item 12825906007:
+- Five customer PDFs rebuilt in the "Candy Cane Pop" system (stripe borders, red/green/white/mint/gold, Fredoka + Pacifico, elf cut-out character, day badges, 24-spark progress strip). Text is the exact v3.3 content; automated check confirmed zero body blocks dropped.
+- New bonus file: The Parents' After-Hours Deck, 36 PG cards (elf excuses, parent dares, confessions).
+- Ten listing images, one per Etsy slot, built from the real new pages.
+- Listing copy draft v2 in `holiday-elf-listing-draft-v2.md`.
+
+Rejected directions kept for the record: v1/v2 plain-page images (09-04, 09-08) and the 09-08 heirloom samples.
+Idea Inbox item 13001181395 (adult edition) updated: brand-safe bonus deck built; standalone adult SKU stays queued.

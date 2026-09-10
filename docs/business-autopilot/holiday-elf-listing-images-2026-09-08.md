@@ -38,3 +38,24 @@ Built and attached to Product Factory item 12825906007:
 
 Rejected directions kept for the record: v1/v2 plain-page images (09-04, 09-08) and the 09-08 heirloom samples.
 Idea Inbox item 13001181395 (adult edition) updated: brand-safe bonus deck built; standalone adult SKU stays queued.
+
+## Update 2026-09-10 — v4 "Groovy Little Sparks" full rebuild
+
+Founder feedback on v3.8: "better but still not 100%... don't make it so 'AI' looking fun fonts... do research and see what people are doing and the vibe."
+
+### Research (not a guess)
+Searched current Etsy/design-trend coverage rather than picking a look. Finding: the documented 2026 Etsy aesthetic is "Play Haus" — dopamine-bright maximalism combined with a 70s groovy revival, an explicit rejection of safe rounded minimalism, with bold retro typography as the primary visual tool. Fredoka, Baloo, and Chewy (used in v3.8) are named as the generic AI/Canva-template tell buyers are moving away from.
+
+### New system: Groovy Little Sparks
+- Palette: muted retro (cranberry, pine, mustard, rust, cream) instead of stop-sign candy-cane red/green.
+- Type: Righteous (70s disco-lettering retro-futuristic display) for headlines, Caveat (genuine handwritten script) for elf-note accents, Poppins for body.
+- Shapes: sunburst medallion day badges, scalloped wavy card borders, wavy ribbon dividers, halftone dot texture, elf photo as a round die-cut sticker instead of a flat cutout.
+- Approved from a 2-page preview (hero + one story day) before the full 24-day rebuild, to avoid a third blind full-cost iteration.
+
+### Build
+All five customer PDFs and the parent deck rebuilt in the new system from the same source text as v3.8 (same automated content-routing check, zero dropped blocks). One rendering bug found in QA — a background color band left a gap behind two-line titles on 6 of 10 listing images, clipping letter tops — fixed before upload.
+
+New assets: 6 PDFs (114 pages) + 10 listing images (2000×2000), all attached to Product Factory item 12825906007, SHA-256 verified against a Monday read-back. Supersedes v3.8 (2026-09-09) and the original v1/v2 sets.
+
+### Still open
+Founder sign-off on v4 look-and-feel, then Executive Reviewer QA, then Router publish package at $18.

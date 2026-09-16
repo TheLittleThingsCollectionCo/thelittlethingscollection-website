@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://compliance.thelittlethingscollection.com/sitemap.xml
+Sitemap: https://www.the10wellness.com/sitemap.xml

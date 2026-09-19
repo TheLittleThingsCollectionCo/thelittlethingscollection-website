@@ -76,6 +76,8 @@ This means Pinterest adds close to zero new content-creation work if you're alre
 
 ## 6. Posting cadence
 
+**Scheduling tool:** use Pinterest's own native scheduler (built into pin creation — set a future publish date/time) rather than a third-party tool. Free, no separate login, and it's the same "no new subscription" approach used for Instagram (Meta Business Suite) in the companion plan.
+
 - **Minimum:** 3-5 new pins/week to start (Week 1-2), scaling to 1/day by Week 4 as the repurposing workflow gets fast.
 - Consistency matters more than volume — Pinterest's algorithm favors accounts that post regularly over ones that post 20 pins one day and nothing for two weeks.
 - No need to delete or "clean up" old pins — unlike Instagram, an old pin that's still driving traffic should stay up indefinitely.

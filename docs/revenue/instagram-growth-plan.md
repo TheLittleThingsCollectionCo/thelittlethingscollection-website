@@ -138,37 +138,29 @@ Ranked by ease of activation for where you are today (existing product, no email
 | **Email capture → nurture → $12 vault** | Email tool (Flodesk/ConvertKit, ~$20-40/mo) | Medium — needs a free lead magnet (e.g., "10 free bump photo ideas") | Highest long-term — owns the audience instead of renting it from the algorithm | Queue for week 3–4, after the account has enough traffic to make list-building worthwhile |
 | **Affiliate links (maternity wear, baby gear via Amazon/LTK)** | Free — LTK or Amazon Associates account | Low | Low-medium — supplemental income, doesn't require growth first | Optional; add once you're posting consistently, not a priority now |
 | **Paid shoutouts to other mom-content pages** | Requires your own audience to be worth mentioning, or budget to pay theirs | Medium | Low-medium, high variance | Skip until you have organic traction — this is spend, not build |
+| **Paid Meta/Facebook ads** | Ad account, ad budget | Low to set up, ongoing cost per click | Fast but expensive relative to margin — a $12 SKU rarely covers cold-traffic CPCs | Hold until the $18 bundle is live and organic conversion is proven — then test a small budget against the bundle, not the $12 single |
 
 **Fastest path to first incremental dollar:** Etsy link in bio + Pinterest pins, both doable today, both zero-cost, both driving to a product that already sells.
 
 ---
 
-## 6. DM automation sequence
+## 6. DM automation — Meta native (no third-party tool)
 
-**Requires a tool** — Instagram's native "saved replies" can't do multi-step keyword-triggered sequences. Use **ManyChat** (free tier covers this volume). This is the copy; you plug it into ManyChat's flow builder.
+**Switched from ManyChat to Meta's built-in automation** — free, no new subscription, already tied to your account. Set up in **Meta Business Suite → Automation → Instagram → "Reply to comments with a keyword."**
+
+**Trade-off, stated plainly:** native Meta automation does a single trigger → one message (optionally with a link button). It cannot do the timed multi-day drip or branch based on what someone replies — that's what a paid tool like ManyChat is actually for. At current comment volume, one well-written instant message captures most of the value anyway; the follow-up/nurture steps below are worth doing personally and manually once someone's engaged, not automating.
 
 **Trigger:** comment containing the word **"BUMP"** on any post.
 
-**Step 1 — Instant auto-reply (0 seconds delay):**
-> Hey! 👋 I saw you commented BUMP — sending you the full 100-idea list right now. One sec...
-
-**Step 2 — Value delivery (immediate, same message or +10 seconds):**
-> Here's a free preview: 5 of my favorite bump photo ideas 👇
-> [attach 3-5 sample pages as an image, or a short text list]
-> These are just a taste — the full vault has 100, organized into 11 collections (window light, outdoor, partner poses, artistic, and more).
-
-**Step 3 — Qualifying follow-up (+2 minutes):**
-> Quick question — are you planning to shoot these yourself, or bring the list to a photographer? (Either works, just want to send you the right tips too.)
-
-**Step 4 — Soft offer (+5 minutes, or immediately after their reply):**
-> Got it! The full vault is $12 — instant download, print it or use it right on your phone. [link]
+**Automated message (single step, sent instantly):**
+> Hey! 👋 Here's the link to the full 100 Pregnancy Photo Ideas vault — $12, instant download, 11 collections (window light, outdoor, partner poses, artistic, and more): [link]
 > No pressure, it's yours whenever you want it. 💛
 
-**Step 5 — Closing message for non-responders (+24 hours, only if no click on the offer link):**
-> Still here if you want it! 100 ideas for $12: [link]
-> (And if you end up wanting the newborn or family vaults too, there's a bundle for $18 — just reply BUNDLE and I'll send that link instead.)
+Set the button label to "Get the Vault" or similar, linking straight to the Etsy listing (or a link-in-bio page if you want to track clicks separately).
 
-Keep every message under ~3 sentences and use her actual first name if ManyChat captures it — the goal is "friend recommending something," not a bot script.
+**Manual follow-up (do this yourself, not automated):** if someone replies asking a question instead of clicking, answer personally — at this volume that's minutes of work per week, not worth building automation for yet. If the bundle goes live, mention it in your reply rather than building a second automated rule.
+
+**Revisit ManyChat if/when:** comment volume gets high enough that manual follow-up becomes real time (a genuine "too many to answer by hand" problem, not a hypothetical one) — that's the point where the subscription pays for itself.
 
 ---
 
@@ -194,8 +186,8 @@ Keep every message under ~3 sentences and use her actual first name if ManyChat 
 - Export and drop into scheduler
 
 **Tuesday (20 min) — Schedule:**
-- Load the week into a scheduler (Later or Metricool, free tiers cover this volume)
-- Confirm ManyChat flow is still active and trigger keyword matches what's in this week's captions
+- Load the week into Meta Business Suite (free, covers Instagram + Facebook — no separate scheduler subscription needed)
+- Confirm the Meta automation rule (Section 6) is still active and its trigger keyword matches what's in this week's captions
 
 **Daily (15 min):**
 - Reply to comments and DMs not caught by automation
@@ -205,7 +197,7 @@ Keep every message under ~3 sentences and use her actual first name if ManyChat 
 - Check Insights: saves, reach, profile visits, link clicks
 - Flag the week's best-performing post/hook for the "advance phase" criteria in Section 7
 
-**Tools:** Canva (design) · Later or Metricool (scheduling + basic analytics) · ManyChat (DM automation) · a simple spreadsheet or the table in Section 3 (content calendar) · Etsy/Shopify dashboards (sales tracking)
+**Tools:** Canva (design) · Meta Business Suite, free (scheduling + basic analytics + DM automation) · a simple spreadsheet or the table in Section 3 (content calendar) · Etsy/Shopify dashboards (sales tracking). No paid subscriptions required to run this at current volume.
 
 **If you hand this to a VA, the 80% they can own:** captioning from the calendar template, Canva design from a saved template, scheduling, comment replies using 3-4 saved responses, weekly Insights screenshot. **What stays with you:** approving captions before they post, responding to DMs that go beyond the automation script, and the Friday performance review.
 

@@ -383,10 +383,16 @@ a{color:var(--accent)}
 
     var total = num('total'), pcare = num('pcare'), rc = num('rcontact'), legacy = num('legacy');
 
-    // gentle consistency notes — never block, just tell them
-    $('flag-pcare').textContent  = (pcare > total && total > 0) ? 'More than your roster total.' : '';
-    $('flag-rc').textContent     = ((pcare + rc) > total && total > 0) ? 'Personal care plus regular contact is more than your roster total.' : '';
-    $('flag-legacy').textContent = (legacy > total && total > 0) ? 'More than your roster total.' : '';
+    // clamp to what's structurally possible — raw entries can be inconsistent (e.g. personal
+    // care alone exceeding the roster total), and letting that flow into the estimate inflates
+    // populations past the actual headcount. Cap, then tell the user we capped it.
+    var pcareEff = Math.min(pcare, total);
+    var rcEff = Math.min(rc, Math.max(0, total - pcareEff));
+    var legacyEff = Math.min(legacy, total);
+
+    $('flag-pcare').textContent  = (pcare > total && total > 0) ? 'More than your roster total — capped at ' + total + ' for this estimate.' : '';
+    $('flag-rc').textContent     = ((pcare + rc) > total && total > 0) ? 'Personal care plus regular contact is more than your roster total — capped at ' + total + ' combined for this estimate.' : '';
+    $('flag-legacy').textContent = (legacy > total && total > 0) ? 'More than your roster total — capped at ' + total + ' for this estimate.' : '';
 
     var ready = total > 0;
     $('out').setAttribute('data-ready', ready ? 'true' : 'false');
@@ -395,8 +401,8 @@ a{color:var(--accent)}
 
     // population each requirement actually reaches
     var popW = total;              // written info: every employee
-    var popD = pcare + rc;         // 1-hour DOEA: personal care OR regular contact
-    var popA = (type === 'spec') ? (pcare + rc) : pcare;  // (e)1 widens to regular contact
+    var popD = pcareEff + rcEff;   // 1-hour DOEA: personal care OR regular contact
+    var popA = (type === 'spec') ? (pcareEff + rcEff) : pcareEff;  // (e)1 widens to regular contact
 
     var eW = Math.round(popW * fw), eD = Math.round(popD * fd), eA = Math.round(popA * fa);
     var totalGap = eW + eD + eA;
@@ -417,7 +423,7 @@ a{color:var(--accent)}
         '. Each one is a document a surveyor can ask for by name.';
 
     // transition cohort: their deadline was 1 Jul 2026, so any gap among them is already past due
-    var pastDue = (total > 0) ? Math.round(totalGap * Math.min(legacy, total) / total) : 0;
+    var pastDue = (total > 0) ? Math.round(totalGap * legacyEff / total) : 0;
     $('pdwrap').hidden = !(legacy > 0 && pastDue > 0);
     $('pd').textContent = pastDue.toLocaleString();
 

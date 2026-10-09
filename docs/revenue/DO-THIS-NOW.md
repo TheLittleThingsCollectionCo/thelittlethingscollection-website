@@ -27,10 +27,11 @@ Any Claude session working in this repo: treat this block as the tiebreaker. Do 
 | 1 | **One attorney meeting + one E&O insurance quote** | Founder scheduling | 2 calls | Delivery for **two ventures at once** — the same items (engagement terms, E&O, secure transfer) gate LNC delivery and ADRD go-live |
 | 2 | Send the **Leesfield email** | None — published address, approved text, unsent since **07-22** | 5 min | First LNC outreach actually in market |
 | 3 | **List the 7 finished PDFs on Etsy** | None — after the Elf listing is live | 2 hrs | Passive trickle; zero risk |
-| 4 | **ADRD go-live**: buy domain, deploy `site/` (see `site/DEPLOY.md`), add mailing address, GA4 + Search Console | Domain purchase | ~1 hr | The self-check funnel, SEO, and a legal email footer |
-| 5 | **ADRD outreach**: post the group/LinkedIn content, pull the AHCA licensure + HCAF lists, start the email sequence | #4 first (footer needs the address) | ongoing | First paid audit pipeline |
-| 6 | **LNC contact routing**: 7 receptionist calls (numbers + script in the 08-15 version, git history) | None | 45 min | 9 of 10 approved LNC emails get a send route |
-| 7 | ~~Marellstone: decide — activate or pause~~ | **Decided 09-08: paused** | — | Reactivation is a founder call, not a drift back. |
+| 4 | **ADRD go-live**: deploy `site/` to a free host (Cloudflare Pages/Netlify/Vercel) and point the already-owned `the10wellness.com` at it via GoDaddy DNS (see `site/DEPLOY.md` — domain purchase is stale, resolved 09-16, nothing to buy) | Pick a host + update GoDaddy DNS | ~1 hr | The self-check funnel, SEO, and a legal email footer |
+| 5 | **ADRD referral-partner outreach** (`docs/adrd/FL_ADRD_Referral_Partner_Outreach.docx`): 4 ready-to-send emails (attorneys, consultants, franchise networks, brokers) — now has its missing attachments, `FL_ADRD_One_Page_Scope.docx` and `FL_ADRD_Sample_Findings_Report.docx` (illustrative, added 09-19). The doc's own sequencing: consultants first, then attorneys, brokers, franchise networks last | The E&O quote in #1 — every partner will ask "what insurance do you carry" | ~1 hr to send | Referral pipeline that compounds, per the doc's own reasoning better than cold email |
+| 6 | **ADRD cold outreach**: post the group/LinkedIn content, pull the AHCA licensure + HCAF lists, start the cold email sequence | #4 first (footer needs the address); lower priority than #5 per the referral doc itself | ongoing | Secondary paid-audit pipeline, once the referral channel is running |
+| 7 | **LNC contact routing**: 7 receptionist calls (numbers + script in the 08-15 version, git history) | None | 45 min | 9 of 10 approved LNC emails get a send route |
+| 8 | ~~Marellstone: decide — activate or pause~~ | **Decided 09-08: paused** | — | Reactivation is a founder call, not a drift back. |
 
 ## The quarter's one strategic decision
 

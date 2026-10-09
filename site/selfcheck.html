@@ -197,6 +197,7 @@ a{color:var(--accent)}
         <input type="number" id="total" min="0" max="9999" step="1" inputmode="numeric" placeholder="0">
         <span class="unit">workers</span>
       </div>
+      <p class="flag" id="flag-total"></p>
     </div>
 
     <div class="q">
@@ -369,46 +370,104 @@ a{color:var(--accent)}
 <script>
 (function(){
   var $ = function(id){ return document.getElementById(id); };
-  var num = function(id){ var v = parseInt($(id).value, 10); return (isNaN(v) || v < 0) ? 0 : v; };
   var picked = function(name){
     var el = document.querySelector('input[name="' + name + '"]:checked');
     return el ? parseFloat(el.value) : 0.8;
   };
 
   var ADDL = { inhome:'2 hours', facility:'3 hours', spec:'3 hours, due at 3 months' };
+  var WHOLE_MSG = 'Enter a whole number, 0 or more.';
+
+  // Reads a field without altering it. Blank is "unanswered" — distinct from an entered 0 — and
+  // is never treated as zero. Negative and fractional values are reported as invalid, never
+  // truncated or clamped; the field keeps exactly what the user typed.
+  function parseField(id){
+    var raw = $(id).value;
+    if(raw === '' || raw == null){ return { blank:true }; }
+    var n = Number(raw);
+    if(isNaN(n)){ return { blank:true }; }
+    if(n < 0){ return { blank:false, valid:false, reason:WHOLE_MSG }; }
+    if(!Number.isInteger(n)){ return { blank:false, valid:false, reason:WHOLE_MSG }; }
+    return { blank:false, valid:true, value:n };
+  }
 
   function render(){
     var type = $('ptype').value;
     $('addl-name').textContent = ADDL[type];
 
-    var total = num('total'), pcare = num('pcare'), rc = num('rcontact'), legacy = num('legacy');
+    var flagTotal = '', flagPcare = '', flagRc = '', flagLegacy = '';
+    var state = 'empty'; // empty | incomplete | invalid | ready
+    var total, pcare, rc, legacy;
 
-    // gentle consistency notes — never block, just tell them
-    $('flag-pcare').textContent  = (pcare > total && total > 0) ? 'More than your roster total.' : '';
-    $('flag-rc').textContent     = ((pcare + rc) > total && total > 0) ? 'Personal care plus regular contact is more than your roster total.' : '';
-    $('flag-legacy').textContent = (legacy > total && total > 0) ? 'More than your roster total.' : '';
+    var tot = parseField('total');
+    if(tot.blank){
+      state = 'empty';
+    } else if(!tot.valid){
+      state = 'invalid';
+      flagTotal = tot.reason;
+    } else if(tot.value === 0){
+      state = 'empty'; // an empty roster is "nothing to estimate yet," not a computed zero
+    } else {
+      total = tot.value;
+      var p = parseField('pcare'), r = parseField('rcontact'), l = parseField('legacy');
 
-    var ready = total > 0;
+      if(p.blank || r.blank || l.blank){
+        state = 'incomplete';
+      } else {
+        if(!p.valid){ flagPcare = p.reason; }
+        if(!r.valid){ flagRc = r.reason; }
+        if(!l.valid){ flagLegacy = l.reason; }
+
+        if(p.valid){ pcare = p.value; }
+        if(r.valid){ rc = r.value; }
+        if(l.valid){ legacy = l.value; }
+
+        if(p.valid && pcare > total){
+          flagPcare = 'Can’t exceed your roster total of ' + total + '.';
+        }
+        if(p.valid && r.valid && !flagPcare && (pcare + rc) > total){
+          flagRc = 'Personal care plus regular contact can’t exceed your roster total of ' + total + '.';
+        } else if(r.valid && !flagRc && !p.valid){
+          // pcare itself is invalid, so the combined check can't run; leave rc's own validity as-is
+        }
+        if(l.valid && legacy > total){
+          flagLegacy = 'Can’t exceed your roster total of ' + total + '.';
+        }
+
+        state = (flagPcare || flagRc || flagLegacy) ? 'invalid' : 'ready';
+      }
+    }
+
+    $('flag-total').textContent  = flagTotal;
+    $('flag-pcare').textContent  = flagPcare;
+    $('flag-rc').textContent     = flagRc;
+    $('flag-legacy').textContent = flagLegacy;
+
+    var ready = (state === 'ready');
     $('out').setAttribute('data-ready', ready ? 'true' : 'false');
+
+    if(!ready){
+      $('big').textContent = '—';
+      $('bigsub').textContent =
+        state === 'incomplete' ? 'Answer all four workforce questions above to see your estimate.' :
+        state === 'invalid'    ? 'Fix the highlighted fields above to see your estimate.' :
+        'Fill in your roster numbers above to see an estimate.';
+      $('pdwrap').hidden = true;
+      $('rows').innerHTML = '';
+      $('unclearbox').hidden = true;
+      return;
+    }
 
     var fw = picked('w'), fd = picked('d'), fa = picked('a'), fu = picked('u');
 
-    // population each requirement actually reaches
+    // population each requirement actually reaches — safe by construction: validation above
+    // already guarantees pcare <= total, pcare + rc <= total, and legacy <= total.
     var popW = total;              // written info: every employee
     var popD = pcare + rc;         // 1-hour DOEA: personal care OR regular contact
     var popA = (type === 'spec') ? (pcare + rc) : pcare;  // (e)1 widens to regular contact
 
     var eW = Math.round(popW * fw), eD = Math.round(popD * fd), eA = Math.round(popA * fa);
     var totalGap = eW + eD + eA;
-
-    if(!ready){
-      $('big').textContent = '—';
-      $('bigsub').textContent = 'Fill in your roster numbers above to see an estimate.';
-      $('pdwrap').hidden = true;
-      $('rows').innerHTML = '';
-      $('unclearbox').hidden = true;
-      return;
-    }
 
     $('big').textContent = totalGap.toLocaleString();
     $('bigsub').textContent = totalGap === 0
@@ -417,7 +476,7 @@ a{color:var(--accent)}
         '. Each one is a document a surveyor can ask for by name.';
 
     // transition cohort: their deadline was 1 Jul 2026, so any gap among them is already past due
-    var pastDue = (total > 0) ? Math.round(totalGap * Math.min(legacy, total) / total) : 0;
+    var pastDue = Math.round(totalGap * legacy / total);
     $('pdwrap').hidden = !(legacy > 0 && pastDue > 0);
     $('pd').textContent = pastDue.toLocaleString();
 
